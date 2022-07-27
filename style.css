@@ -1,0 +1,691 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+/* la barre de recherche */
+#bloc_page 
+{
+  padding-left: 1rem;
+  padding-right: 4rem;
+}
+
+
+.flexInput 
+{
+  display: flex;
+  justify-content: space-betwen;
+  position: relative;
+  margin: 20px 0 0 0;
+}
+
+.flexInput input 
+{
+  margin-right: 1rem;
+  padding-left: 1rem;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  font-weight: bold;
+}
+
+.fa-location-dot {
+  border: 1px solid transparent;
+  padding: 0.7rem;
+  background: #ececec;
+  border-radius: 0.5rem;
+}
+
+#search 
+{
+  display: flex;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 0px 10px 10px 0px;
+  background-color: rgb(0, 68, 255);
+  width: 95px;
+}
+
+#search > i
+{
+  display: none;
+}
+
+#search a {
+  font-weight: bold;
+  color: white;
+}
+
+/* Les liens en en-tête et logo */
+
+#logo {
+  flex-grow: 3;
+}
+
+#logo,
+img {
+  width: 120px;
+  height: 50x;
+}
+
+.colorAncre
+{
+  color: blue;
+  border-top: 2px blue solid
+}
+
+nav a 
+{
+  text-decoration: none;
+  margin-left: 50px;
+  padding: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+header 
+{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-left: 15px;
+  align-items: center;
+}
+
+header, p 
+{
+  margin: 15px 0 0 0;
+}
+
+
+/* Les filtres */
+
+.circle {
+  background-color: #dbe9fe;
+  margin: 0px 12px 0 0;
+  padding: 1em;
+  position: relative;
+  right: 10px;
+  border-radius: 50px;
+}
+.lienFiltre {
+  display: flex;
+  position: relative;
+  min-height: 3em;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+
+.filtre__lien__fusion {
+  position: absolute;
+  left: 0;
+  right: auto;
+  color: blue;
+}
+
+.filtre__lien__texte {
+  margin: 0px 10px 0px 10px;
+  padding: 0px 25px 0 45px;
+  border-radius: 70px 80px 80px 70px;
+
+  font-weight: 700;
+  border-top: 4px #f2f2f2 solid;
+  border-bottom: 4px #f2f2f2 solid;
+  border-right: 4px #f2f2f2 solid;
+
+  display: flex;
+  align-items: center;
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+
+.filtre__lien__texte:hover {
+  box-shadow: 0 0 0.2em #1d6773;
+}
+
+.carre
+{
+  width: 40px;
+  height:40px;
+  border: 1px solid gray;
+  border-radius: 40px;
+  margin: 12px;
+}
+.block-filtre__filtres__lien:hover:nth-child(1) {
+  border: none;
+  transform: none;
+}
+
+.filtre__main {
+  font-weight: bold;
+  margin: 0 3em 0 0;
+  line-height: 3em;
+}
+
+.filtre {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+
+.fa-info 
+{
+  padding: 7px;
+  border-radius: 360%;
+}
+.logo-information 
+{
+  margin-left: 10px;
+}
+
+.fa-child-reaching
+{
+  width: 16px;
+  height: 16px;
+}
+
+/* fin des filtres */
+
+h1 {
+  font-weight: bold;
+  margin: 30px 0 0 0;
+}
+
+.flexBetween 
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo 
+{
+  width: 40%;
+  margin-left: 10%;
+}
+
+.fa-info
+{
+  color:blue;
+}
+
+/* les hôtels de l'article */
+
+section h2 
+{
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+.marginBold
+{
+  font-weight: bold;
+  margin-top: 50px;
+}
+.contenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #f2f2f2; 
+}
+
+
+#global
+ {
+  background-color: #f2f2f2;
+  width: 68%;
+  border-radius: 1.5rem;
+  padding: 1%;
+  margin-left: -8px;
+}
+
+ul 
+{
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.fa-grey
+{
+  color: rgb(161, 161, 161);
+}
+
+.leshotels {
+  background-color: white;
+  padding: 0.375rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 0 16px #0000002e;
+  margin-bottom: 35px;
+  width: 30%;
+  height: 210px;
+  position: relative;
+}
+
+
+
+.leshotels h3 
+{
+  margin: 0;
+}
+
+.leshotels p { 
+  margin: 5px;
+}
+
+.leshotels ul, .flexPosition ul { 
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 8px;
+}
+
+#les_hotels 
+{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%; 
+}
+
+
+section img 
+{
+  height: 8rem;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+a 
+{
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Les hôtels du aside */
+
+.lesPlusPopulaires {
+  display: flex;
+  background-color: #f2f2f2;
+  padding: 1%;
+  border-radius: 5%;
+  flex-wrap: wrap;
+  width: 30%;
+  margin-right: -48px;
+}
+
+
+.titrePopulary 
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.hotels-populaires 
+{
+  display: flex;
+  background-color: white;
+  padding: 0.375rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 0 16px #0000002e;
+  cursor: pointer;
+  box-sizing: border-box;
+  height: 156px;
+  width: 95%;
+}
+
+
+aside a {
+  display: flex;
+}
+
+.flexPosition {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  position: relative;
+}
+
+.flexPosition h3, .flexPosition p { 
+  margin: 5px 0 5px 0; 
+}
+
+
+.hotels-populaires img { 
+  border-radius: 1rem 0 0 1rem;
+  height: 9rem;
+  object-fit: cover;
+  max-width: 40%;
+}
+
+ul li {
+  color: blue;
+}
+
+/*activités à Marseille*/
+
+.colonne2 
+{
+  width: 50%; 
+}
+
+.side_activite 
+{
+  width: 100%;
+  margin-bottom: 13%;
+  box-shadow: black 0 0 10px -4px;
+  border-radius: 23px;
+}
+
+.activite 
+{
+  display: flex;
+  justify-content: flex-around;
+  width: 49%;
+}
+
+#classification
+{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3%;
+}
+
+.titreActivite 
+{
+  width: 100%;
+  margin-top: 10%;
+}
+
+.cadreDeco 
+{
+
+  height: fit-content;
+  margin: 10px 8px 25px 0px;
+  box-shadow: black 0 0 10px -4px;
+  border-radius: 23px;
+  width: 50%; 
+}
+
+.cadrePhoto 
+{
+  width: 100%; 
+  background-position: center;
+  background-size: cover;
+  border-radius: 23px 23px 0 0;
+  background-repeat: no-repeat;
+}
+
+.photoVieuxPort {
+  height: 400px;
+  background-image: url(images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+}
+
+.fortDePomègues {
+  height: 200px;
+  background-image: url("images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+  margin-top: 3%;
+}
+
+.frioul {
+  height: 122px;
+  background-image: url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+  margin-top: -4%;
+}
+
+.parcNational {
+  height: 400px;
+  background-image: url(images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+}
+
+.notreDame {
+  height: 122px;
+  background-image: url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+  margin-top: 3%;
+}
+
+.longchamp {
+  height: 200px;
+  background-image: url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+  margin-top : -4%;
+}
+
+.cadreDescription {
+  margin: 0 10px;
+  line-height: 3rem;
+  font-weight: bold;
+}
+
+/* Bas de page */
+footer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color:#f2f2f2;
+  font-family: "Raleway", sans-serif;
+  height: 200px;
+}
+
+
+#bloc_page {
+  font-family: "Raleway", sans-serif;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.titre-hotel {
+  position: absolute;
+  top: 26.5rem;
+  margin-left: 1.2rem;
+  font-weight: bold;
+}
+
+#a_propos
+{
+  margin: 2.5% 15% 0 0;
+}
+
+#nos_hébergements
+{
+  margin: 2.5% 15% 0 0;
+}
+
+#assistance
+{
+  margin: 2.5% 15% 0 0;
+}
+
+
+/*Partie responsive du css */
+
+
+@media all and (max-width: 1024px)
+{
+
+  #bloc_page
+  {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  
+
+  .logo, img
+  {
+    width: 100px;
+  }
+
+  nav a 
+  {
+    border-bottom:3px solid #F2F2F2; 
+  }
+
+  .colorAncre
+  {
+    border-bottom: 3px blue solid;
+    border-top: none;
+  }
+
+  #search
+  {
+    width: 45px;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  #search a 
+  {
+    display: none;
+  }
+
+  #search > i 
+  {
+    display: block;
+    margin: 31%;
+    color: white;
+  }
+
+  .filtre__main
+  {
+    width: 100%;
+  }
+
+  #bloc_page
+  {
+    width: auto;
+  }
+
+
+  .filtre
+  {
+    display: flex;
+    margin-top: 2rem;
+  }
+
+  .contenu
+  {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+  }
+
+  #global
+  {
+    background-color: #fff;
+  }
+
+  
+  .leshotels
+  {
+    min-width: 153%;
+  }
+
+  #les_hotels
+  {
+    display: flex;
+    flex-direction: column-reverse;
+    min-width: 80px;
+  }
+
+  .lesPlusPopulaires
+  {
+    min-width: 108%;
+    border-radius: 0%;
+    margin-left: -4%;
+    width: revert;
+    padding: 2rem;
+  }
+
+  .titrePopulary
+  {
+    width: 90%;
+  }
+
+  .hotels-populaires
+  {
+    margin: 5px;
+  }
+
+  .activite
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #classification
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cadreDeco
+  {
+    min-width: 216%;
+    min-height: 20px;
+  }
+  footer
+  {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    height: 400px;
+    margin-block-start: 50px;
+  }
+
+  footer p 
+  {
+    margin-bottom: 3%;
+  }
+
+  header
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photoVieuxPort
+  {
+    height: 160px;
+  }
+
+  .side_activite
+  {
+    width: 431%;
+    margin: 40px 0 0 0;
+  }
+
+  .fortDePomègues
+  {
+    height: 160px;
+  }
+
+  .frioul
+  {
+    height: 160px;
+  }
+
+  .parcNational
+  {
+    height: 160px;
+  }
+
+  .notreDame
+  {
+    height: 160px;
+  }
+
+  .longchamp
+  {
+    height: 160px;
+  }
+
+
+}
+
+
+
+
+
